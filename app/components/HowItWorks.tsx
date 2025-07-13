@@ -32,7 +32,7 @@ const HowItWorks = () => {
   return (
     <section className="relative min-h-screen bg-black flex items-center">
       {/* Perspective Grid Background - Top */}
-      <div className="absolute top-0 left-0 w-full h-[25%] overflow-hidden animate-slide-in-top">
+      <div className="absolute top-0 left-0 w-full h-[25%] overflow-hidden">
         <Image
           src="/PerspectiveGridUp.svg"
           alt="Perspective Grid"
@@ -42,7 +42,7 @@ const HowItWorks = () => {
       </div>
 
       {/* Perspective Grid Background - Bottom */}
-      <div className="absolute bottom-0 left-0 w-full h-[40%] overflow-hidden animate-slide-in-bottom">
+      <div className="absolute bottom-0 left-0 w-full h-[40%] overflow-hidden ">
         <Image
           src="/PerspectiveGridDown.svg"
           alt="Perspective Grid"
