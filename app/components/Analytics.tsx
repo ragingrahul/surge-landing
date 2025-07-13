@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { ChartLineLinear } from "./Chart";
 
 const Analytics = () => {
@@ -43,6 +44,14 @@ const Analytics = () => {
                 <div className="text-4xl font-bold text-green-400">+5.02%</div>
               </div>
             </div>
+          </div>
+          <div className="absolute top-[35%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10">
+            <Image
+              src="/Ellipse 13.svg"
+              alt="Ellipse 13"
+              width={1000}
+              height={800}
+            />
           </div>
 
           {/* Chart Container */}

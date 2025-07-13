@@ -14,9 +14,6 @@ const Hero = () => {
         />
       </div>
 
-      {/* Hero Content */}
-      <div className="relative z-10">{/* Add your hero content here */}</div>
-
       {/* Animated Stars */}
       <div className="absolute top-[15%] left-[10%] z-15 animate-star-pop-1">
         <div className="animate-star-hover">
