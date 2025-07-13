@@ -89,6 +89,141 @@ html {
   animation: float 3s ease-in-out infinite;
 }
 
+@keyframes starPop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes starHover {
+  0%, 100% { 
+    transform: translateY(0px) scale(1);
+  }
+  50% { 
+    transform: translateY(-8px) scale(1.1);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes riseUp {
+  0% {
+    transform: translateY(150%);
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(40%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInScale {
+  0% {
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-top {
+  animation: slideInFromTop 1.2s ease-out forwards;
+}
+
+.animate-slide-in-bottom {
+  animation: slideInFromBottom 1.2s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+.animate-rise-up {
+  animation: riseUp 1.5s ease-out 0.6s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-scale {
+  animation: fadeInScale 1.8s ease-out 0.4s forwards;
+  opacity: 0;
+}
+
+.animate-star-pop-1 {
+  animation: starPop 0.6s ease-out 1.6s forwards;
+  opacity: 0;
+}
+
+.animate-star-pop-2 {
+  animation: starPop 0.6s ease-out 1.7s forwards;
+  opacity: 0;
+}
+
+.animate-star-pop-3 {
+  animation: starPop 0.6s ease-out 1.8s forwards;
+  opacity: 0;
+}
+
+.animate-star-pop-4 {
+  animation: starPop 0.6s ease-out 1.9s forwards;
+  opacity: 0;
+}
+
+.animate-star-pop-5 {
+  animation: starPop 0.6s ease-out 2.0s forwards;
+  opacity: 0;
+}
+
+.animate-star-pop-6 {
+  animation: starPop 0.6s ease-out 2.1s forwards;
+  opacity: 0;
+}
+
+.animate-star-pop-7 {
+  animation: starPop 0.6s ease-out 2.2s forwards;
+  opacity: 0;
+}
+
+.animate-star-pop-8 {
+  animation: starPop 0.6s ease-out 2.3s forwards;
+  opacity: 0;
+}
+
+.animate-star-hover {
+  animation: starHover 4s ease-in-out infinite;
+  animation-delay: 0.6s;
+}
+
 /* Loading animation */
 @keyframes pulse {
   0%, 100% { opacity: 1; }
