@@ -1,9 +1,45 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { getCompositeVolatility, fromContractUnits } from "../../lib/contract";
 
 const Hero = () => {
+  const [volatility, setVolatility] = useState<string>("--");
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchVolatility = async () => {
+      try {
+        setIsLoading(true);
+        setError(null);
+        const volatilityData = await getCompositeVolatility();
+
+        // Convert the raw value to percentage format if needed
+        const formattedVolatility = volatilityData.includes("%")
+          ? volatilityData
+          : fromContractUnits(volatilityData, 4).toFixed(2);
+
+        setVolatility(`${formattedVolatility}%`);
+      } catch (err) {
+        console.error("Failed to fetch volatility:", err);
+        setError("Failed to load");
+        setVolatility("--");
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchVolatility();
+
+    // Refresh volatility data every 30 seconds
+    const interval = setInterval(fetchVolatility, 30000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div
       id="home"
@@ -109,8 +145,19 @@ const Hero = () => {
           APTOS VOLATILITY INDEX{" "}
         </h1>
         <h1 className="text-white text-4xl md:text-8xl font-semibold tracking-tighter">
-          12.54%
+          {isLoading ? (
+            <span className="animate-pulse">--</span>
+          ) : error ? (
+            <span className="text-red-400 text-2xl md:text-4xl">Error</span>
+          ) : (
+            volatility
+          )}
         </h1>
+        {error && (
+          <p className="text-red-300 text-sm mt-2">
+            Failed to load volatility data
+          </p>
+        )}
       </div>
 
       <div className="absolute bottom-[25%] left-1/2 transform -translate-x-1/2 z-30 text-center">
