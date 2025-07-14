@@ -40,28 +40,22 @@ const Footer = () => {
               <h4 className="text-white font-semibold mb-4">LINKS</h4>
               <div className="space-y-3">
                 <Link
-                  href="/features"
+                  href="#analytics"
                   className="block text-gray-400 hover:text-teal-400 text-sm transition-colors"
                 >
-                  Features
+                  Analytics
                 </Link>
                 <Link
-                  href="/how-it-works"
+                  href="#features"
+                  className="block text-gray-400 hover:text-teal-400 text-sm transition-colors"
+                >
+                  features
+                </Link>
+                <Link
+                  href="#how-it-works"
                   className="block text-gray-400 hover:text-teal-400 text-sm transition-colors"
                 >
                   How It Works
-                </Link>
-                <Link
-                  href="/variance-swap"
-                  className="block text-gray-400 hover:text-teal-400 text-sm transition-colors"
-                >
-                  Variance Swap
-                </Link>
-                <Link
-                  href="/volatility-etf"
-                  className="block text-gray-400 hover:text-teal-400 text-sm transition-colors"
-                >
-                  Volatility ETF
                 </Link>
               </div>
             </div>

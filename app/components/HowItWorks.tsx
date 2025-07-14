@@ -5,27 +5,27 @@ const HowItWorks = () => {
   const steps = [
     {
       number: "01",
-      title: "TRACK REALIZED VOLATILITY",
+      title: "VOLATILITY ORACLE",
       description:
-        "Our Oracle Aggregates On-Chain Data To Calculate Realized Volatility.",
+        "Fetches live APT prices from Pyth and calculates real-time volatility metrics.",
     },
     {
       number: "02",
-      title: "TRACK REALIZED VOLATILITY",
+      title: "TOKEN MINTING",
       description:
-        "Our Oracle Aggregates On-Chain Data To Calculate Realized Volatility.",
+        "Mint LONG tokens (bet against volatility) or SHORT tokens (bet on volatility) using APT.",
     },
     {
       number: "03",
-      title: "TRACK REALIZED VOLATILITY",
+      title: "AUTO REBALANCING",
       description:
-        "Our Oracle Aggregates On-Chain Data To Calculate Realized Volatility.",
+        "Token values automatically adjust as volatility changes in real-time.",
     },
     {
       number: "04",
-      title: "TRACK REALIZED VOLATILITY",
+      title: "TOKEN REDEMPTION",
       description:
-        "Our Oracle Aggregates On-Chain Data To Calculate Realized Volatility.",
+        "Redeem tokens back to APT based on current volatility for profit/loss.",
     },
   ];
 
