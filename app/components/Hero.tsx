@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -90,43 +92,13 @@ const Hero = () => {
 
       {/* Hero Buttons */}
       <div className="absolute bottom-[20%] left-1/2 transform -translate-x-1/2 z-30 flex gap-4">
-        <button className="bg-black border border-gray-600 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 hover:border-gray-400 flex items-center gap-2">
-          Variance Swap
-          <svg
-            width="16"
-            height="16"
-            viewBox="0 0 16 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M3.33334 8H12.6667M12.6667 8L8.66668 4M12.6667 8L8.66668 12"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </button>
-
-        <button className="bg-teal-500 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 hover:bg-teal-600 flex items-center gap-2">
-          Volatility ETF
-          <svg
-            width="16"
-            height="16"
-            viewBox="0 0 16 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M3.33334 8H12.6667M12.6667 8L8.66668 4M12.6667 8L8.66668 12"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </button>
+        <Link
+          href="https://aptos.swapthesurge.com"
+          className="bg-teal-500 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 hover:bg-teal-600 flex items-center gap-2"
+        >
+          Launch App
+          <ArrowRight />
+        </Link>
       </div>
 
       <div className="absolute bottom-[45%] left-1/2 transform -translate-x-1/2 z-20 text-center">

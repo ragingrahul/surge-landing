@@ -21,16 +21,10 @@ const Header = () => {
               Home
             </Link>
             <Link
-              href="/variance-swap"
-              className="text-white hover:text-teal-400 transition-colors text-sm font-medium"
-            >
-              Variance Swap
-            </Link>
-            <Link
               href="/volatility-etf"
               className="text-white hover:text-teal-400 transition-colors text-sm font-medium"
             >
-              Volatility ETF
+              Analytics
             </Link>
             <Link
               href="/features"
@@ -43,6 +37,12 @@ const Header = () => {
               className="text-white hover:text-teal-400 transition-colors text-sm font-medium"
             >
               How it Works
+            </Link>
+            <Link
+              href="https://aptos.swapthesurge.com"
+              className="text-white hover:text-teal-400 transition-colors text-sm font-medium"
+            >
+              Launch App
             </Link>
           </div>
 
