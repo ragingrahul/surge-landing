@@ -4,7 +4,7 @@ import { ChartLineLinear } from "./Chart";
 
 const Analytics = () => {
   return (
-    <section className="py-20 bg-black">
+    <section id="analytics" className="py-20 bg-black">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           {/* Header with Stats */}

@@ -30,7 +30,10 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section className="relative min-h-screen bg-black flex items-center">
+    <section
+      id="how-it-works"
+      className="relative min-h-screen bg-black flex items-center"
+    >
       {/* Perspective Grid Background - Top */}
       <div className="absolute top-0 left-0 w-full h-[25%] overflow-hidden">
         <Image

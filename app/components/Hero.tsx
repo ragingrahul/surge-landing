@@ -5,7 +5,10 @@ import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <div className="relative containerx px-6 pt-48 pb-20 w-full h-screen">
+    <div
+      id="home"
+      className="relative containerx px-6 pt-48 pb-20 w-full h-screen"
+    >
       {/* Perspective Grid Background */}
       <div className="absolute top-0 left-0 w-full h-[25%] overflow-hidden animate-slide-in-top">
         <Image

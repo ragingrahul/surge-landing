@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <footer className="bg-black relative border-t-1 border-[#1F1F1F]">
       <div className="max-w-6xl mx-auto border-x-1 border-[#1F1F1F]">
-        <div className="grid grid-cols-1 md:grid-cols-4">
-          {/* Brand */}
-          <div className="col-span-1 md:col-span-1 p-6 md:py-16 ">
+        <div className="grid grid-cols-1 md:grid-cols-5">
+          {/* Brand - Left Side (Smaller) */}
+          <div className="md:col-span-2 p-6 md:py-16">
             <div className="flex items-center space-x-2 mb-6">
               <Link href="/" className="flex items-center space-x-2">
                 <Image src="/Group.png" alt="Logo" width={400} height={400} />
@@ -20,66 +20,69 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Contact Us */}
-          <div className="p-6 md:py-16 ">
-            <h4 className="text-white font-semibold mb-4">CONTACT US</h4>
-            <div className="space-y-3">
-              <div>
-                <p className="text-gray-400 text-sm">support@surgify.in</p>
-              </div>
-              <div>
-                <p className="text-gray-400 text-sm">+91-98334 98954</p>
+          {/* Right Side - Contact, Links, Legal (Larger) */}
+          <div className="md:col-span-3 grid grid-cols-1 md:grid-cols-3 p-6 md:py-16">
+            {/* Contact Us */}
+            <div className="md:px-6 ">
+              <h4 className="text-white font-semibold mb-4">CONTACT US</h4>
+              <div className="space-y-3">
+                <div>
+                  <p className="text-gray-400 text-sm">support@surgify.in</p>
+                </div>
+                <div>
+                  <p className="text-gray-400 text-sm">+91-98334 98954</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* Links */}
-          <div className="p-6 md:py-16 ">
-            <h4 className="text-white font-semibold mb-4">LINKS</h4>
-            <div className="space-y-3">
-              <Link
-                href="/features"
-                className="block text-gray-400 hover:text-teal-400 text-sm transition-colors"
-              >
-                Features
-              </Link>
-              <Link
-                href="/how-it-works"
-                className="block text-gray-400 hover:text-teal-400 text-sm transition-colors"
-              >
-                How It Works
-              </Link>
-              <Link
-                href="/variance-swap"
-                className="block text-gray-400 hover:text-teal-400 text-sm transition-colors"
-              >
-                Variance Swap
-              </Link>
-              <Link
-                href="/volatility-etf"
-                className="block text-gray-400 hover:text-teal-400 text-sm transition-colors"
-              >
-                Volatility ETF
-              </Link>
+            {/* Links */}
+            <div className="md:px-6 ">
+              <h4 className="text-white font-semibold mb-4">LINKS</h4>
+              <div className="space-y-3">
+                <Link
+                  href="/features"
+                  className="block text-gray-400 hover:text-teal-400 text-sm transition-colors"
+                >
+                  Features
+                </Link>
+                <Link
+                  href="/how-it-works"
+                  className="block text-gray-400 hover:text-teal-400 text-sm transition-colors"
+                >
+                  How It Works
+                </Link>
+                <Link
+                  href="/variance-swap"
+                  className="block text-gray-400 hover:text-teal-400 text-sm transition-colors"
+                >
+                  Variance Swap
+                </Link>
+                <Link
+                  href="/volatility-etf"
+                  className="block text-gray-400 hover:text-teal-400 text-sm transition-colors"
+                >
+                  Volatility ETF
+                </Link>
+              </div>
             </div>
-          </div>
 
-          {/* Legal */}
-          <div className="p-6 md:py-16">
-            <h4 className="text-white font-semibold mb-4">LEGAL</h4>
-            <div className="space-y-3">
-              <Link
-                href="/terms"
-                className="block text-gray-400 hover:text-teal-400 text-sm transition-colors"
-              >
-                Terms Of Service
-              </Link>
-              <Link
-                href="/privacy"
-                className="block text-gray-400 hover:text-teal-400 text-sm transition-colors"
-              >
-                Privacy Policy
-              </Link>
+            {/* Legal */}
+            <div className="md:px-6">
+              <h4 className="text-white font-semibold mb-4">LEGAL</h4>
+              <div className="space-y-3">
+                <Link
+                  href="/terms"
+                  className="block text-gray-400 hover:text-teal-400 text-sm transition-colors"
+                >
+                  Terms Of Service
+                </Link>
+                <Link
+                  href="/privacy"
+                  className="block text-gray-400 hover:text-teal-400 text-sm transition-colors"
+                >
+                  Privacy Policy
+                </Link>
+              </div>
             </div>
           </div>
         </div>

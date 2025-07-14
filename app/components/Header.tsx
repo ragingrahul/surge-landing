@@ -15,25 +15,25 @@ const Header = () => {
           {/* Navigation Links - centered */}
           <div className="hidden lg:flex items-center space-x-8">
             <Link
-              href="/"
+              href="#home"
               className="text-teal-400 hover:text-teal-300 transition-colors text-sm font-medium"
             >
               Home
             </Link>
             <Link
-              href="/volatility-etf"
+              href="#analytics"
               className="text-white hover:text-teal-400 transition-colors text-sm font-medium"
             >
               Analytics
             </Link>
             <Link
-              href="/features"
+              href="#features"
               className="text-white hover:text-teal-400 transition-colors text-sm font-medium"
             >
               Features
             </Link>
             <Link
-              href="/how-it-works"
+              href="#how-it-works"
               className="text-white hover:text-teal-400 transition-colors text-sm font-medium"
             >
               How it Works
